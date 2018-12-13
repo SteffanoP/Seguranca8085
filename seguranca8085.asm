@@ -4,7 +4,7 @@ jmp configure
 .org 003ch
 jmp erro
 
-configure:;apaga qualquer mensagem existente
+configure:;Apaga qualquer mensagem existente
 mvi a, 00h
 out 00h
 mvi a, 00h
@@ -40,7 +40,7 @@ out 0Fh
 mvi a, 00h
 out 0Fh
 
-Mensagem:;escreve "ola"
+Mensagem:;Escreve "ola"
 mvi a, 00h
 out 00h
 
@@ -68,7 +68,7 @@ LXI SP, FFFFH
 contadorerro:
 mvi c, 5
 
-senha:; senha "ab"
+senha: ;Senha "ab"
 
 letra_a:
 in 00h
@@ -82,7 +82,7 @@ cpi 62H
 jz nome
 jmp letra_b
 
-nome:; nome dav ste
+nome: ;Nome dav ste
 
 mvi A, 42h
 out 00h
